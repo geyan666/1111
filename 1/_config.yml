@@ -1,0 +1,126 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Blog-格岩志
+subtitle:
+description: 逢君一笑，人间无此欢喜
+author: 格岩
+language: zh-Hans
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://www.dmgroup.site/
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+  
+# Home page setting
+baidu_url_submit:
+  count: 1 
+  host: www.dmgroup.site
+  token: http://data.zz.baidu.com/urls?site=www.dmgroup.site&token=Jny1Bzb4XmBOuUG0
+  path: baidu_urls.txt
+# Live2D
+## https://github.com/EYHN/hexo-helper-live2d
+live2d:
+  model: hijiki 
+  # 模型名称 默认值: z16
+  width: 150 
+  # 宽度 默认值: 150
+  height: 300 
+  # 高度 默认值: 300
+  scaling: 1 
+  # 分辨率缩放倍率 默认值: 2
+  opacityDefault: 10 
+  # 初始的透明度 默认值: 0.7
+  opacityHover: 10 
+  # 鼠标悬浮时的透明度 默认值: 1
+  mobileShow: true 
+  mobileScaling: 0.5 
+  # 移动设备缩放倍率 默认值: 0.5
+  position: right 
+  # 模型左右侧放置位置 默认值: right
+  horizontalOffset: 0 
+  # 元素的水平偏移 默认值: 0
+  verticalOffset: -20 
+  # 元素的底部偏移 默认值: -20
+  id: live2dcanvas 
+  # 元素的id 默认值: live2dcanvas
+  deviceJsSource: local 
+  # current-device 脚本的来源 默认值: local
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 6
+  order_by: -date
+  
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 6
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  -type: baidu_url_submitter 
+  repository: 
+  repo: 
+    github: git@github.com:geyan666/geyan666.github.io.git 
+    coding: git@git.coding.net:geyan666/geyan666.git
+  branch: master
+# sitemap
+sitemap:
+path: sitemap.xml
