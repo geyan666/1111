@@ -40,7 +40,7 @@ footer:
   since: 2017
 
   # Icon between year and copyright info.
-  icon: user
+  icon: heart
 
   # If not defined, will be used `author` from Hexo main config.
   copyright: true
@@ -129,15 +129,16 @@ social_icons:
 
 # Blog rolls
 links_icon: link
-links_title: 推荐链接
+links_title: 友情链接
 #links_layout: block
 links_layout: inline
 links:
-  主页: https://home.dmgroup.site/
-  
-
-
-
+  我的主页: https://home.dmgroup.site/
+  斗图制作: https://www.dmgroup.site/space/
+  秋衍博客: http://www.qiuyanmoyan.top/
+  静水博客: http://csyanwb.cn/
+  L&H site: http://l2h.site/
+  沐小丫博客: http://kenkenken.com/
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
@@ -292,7 +293,8 @@ font:
   # `external: true` will load this font family from `host` above.
   # `family: Times New Roman`. Without any quotes.
   # `size: xx`. Use `px` as unit.
-
+  # Enable sidebar on narrow view
+   onmobile: true
   # Global font settings used on <body> element.
   global:
     external: true
@@ -355,7 +357,7 @@ disqus:
   count: true
 
 # Hypercomments
-#hypercomments_id:
+hypercomments_id: 103479
 
 # changyan
 changyan:
@@ -381,7 +383,7 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTAyMC8zMDQ3NC83MDI4
+#livere_uid: MTAyMC8zMDQ3NC83MDI4
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
@@ -658,7 +660,7 @@ motion:
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: true
+pace: false
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce

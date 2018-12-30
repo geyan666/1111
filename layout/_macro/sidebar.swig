@@ -135,17 +135,17 @@
             var ap = new APlayer({
               element: document.getElementById('player1'),
               narrow: false,
-              autoplay: false,
+              autoplay: true,
               showlrc: false,
-              mutex: false,
+              mutex: true,
               theme: '#ad7a86',
               mode: 'circulation',
               music:
                   {
-                      title: '我也很想他',
-                      author: '孙燕姿',
-                      url: 'http://p00xnofp8.bkt.clouddn.com/%E5%AD%99%E7%87%95%E5%A7%BF-%E6%88%91%E4%B9%9F%E5%BE%88%E6%83%B3%E4%BB%96.mp3',
-                      pic: 'http://p00xnofp8.bkt.clouddn.com/T002R300x300M000000E07bx0REaHm.jpg'
+                      title: '椿',
+                      author: '沈以诚',
+                      url: 'http://p00xnofp8.bkt.clouddn.com/%E6%B2%88%E4%BB%A5%E8%AF%9A%20-%20%E6%A4%BF.mp3',
+                      pic: 'http://p00xnofp8.bkt.clouddn.com/chun.png'
                   },
             });
           </script>
